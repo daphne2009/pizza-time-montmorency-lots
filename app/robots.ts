@@ -1,10 +1,2 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-* { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
-body { margin: 0; background: #090909; color: #fff; }
-a { transition: opacity .2s ease; }
-a:hover { opacity: .82; }
-.photo-polish { filter: brightness(1.05) contrast(1.08) saturate(1.08) sharpen(1); }
-::selection { background: #d9272e; color: white; }
+import type { MetadataRoute } from "next";
+export default function robots(): MetadataRoute.Robots { const base = process.env.NEXT_PUBLIC_SITE_URL || "https://pizza-time-montmorency.vercel.app"; return { rules: [{ userAgent: "*", allow: "/", disallow: ["/admin", "/api/"] }], sitemap: `${base}/sitemap.xml` }; }
