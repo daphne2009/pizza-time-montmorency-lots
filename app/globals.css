@@ -3,8 +3,12 @@
 @tailwind utilities;
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
-body { margin: 0; background: #fff; color: #171717; }
+body { margin: 0; background: #fffaf5; color: #171717; }
 a { transition: opacity .2s ease; }
 a:hover { opacity: .82; }
 .photo-polish { filter: brightness(1.05) contrast(1.08) saturate(1.08) sharpen(1); }
 ::selection { background: #d9272e; color: white; }
+@keyframes product-reveal { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } }
+.product-reveal { animation: product-reveal .55s ease both; }
+.two-lines { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden; }
+@media (prefers-reduced-motion: reduce) { .product-reveal { animation: none; } * { scroll-behavior: auto !important; transition-duration: .01ms !important; } }
