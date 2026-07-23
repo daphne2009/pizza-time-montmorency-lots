@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { PromoBanner } from "@/components/PromoBanner";
 import "./globals.css";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://pizza-time-montmorency.vercel.app";
@@ -16,5 +17,5 @@ export const metadata: Metadata = {
 export const viewport: Viewport = { width: "device-width", initialScale: 1, themeColor: "#111111" };
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   const schema = { "@context": "https://schema.org", "@type": "Restaurant", name: "Pizza Time Montmorency", telephone: "+33134121211", address: { "@type": "PostalAddress", streetAddress: "110 avenue de Domont", postalCode: "95160", addressLocality: "Montmorency", addressCountry: "FR" }, servesCuisine: ["Pizza", "Fast-food"], priceRange: "€€" };
-  return <html lang="fr"><body><Header /><main>{children}</main><Footer /><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema).replace(/</g, "\\u003c") }} /></body></html>;
+  return <html lang="fr"><body><Header /><PromoBanner /><main>{children}</main><Footer /><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema).replace(/</g, "\\u003c") }} /></body></html>;
 }

@@ -46,13 +46,15 @@ const hotspots = [
 
 export default function Home() {
   return (
+    <>
     <main className="relative w-full bg-black">
       <Image
-        src="/images/accueil-passion.png"
+        src="/images/accueil-passion.webp"
         alt="Accueil Pizza Time Montmorency"
         width={1024}
         height={1536}
         priority
+        quality={72}
         sizes="100vw"
         className="h-auto w-full"
       />
@@ -84,5 +86,22 @@ export default function Home() {
         </Link>
       ))}
     </main>
+    <section className="bg-white px-4 py-16 text-neutral-950" aria-labelledby="avis-google">
+      <div className="mx-auto max-w-5xl rounded-[2rem] border border-black/10 bg-neutral-50 p-7 shadow-sm sm:p-10">
+        <div className="grid items-center gap-8 md:grid-cols-[1fr_auto]">
+          <div>
+            <p className="font-black uppercase tracking-[.2em] text-tomato">Avis Google</p>
+            <h2 id="avis-google" className="mt-2 text-3xl font-black sm:text-4xl">L’avis de nos clients compte</h2>
+            <div className="mt-5 flex flex-wrap items-center gap-4"><span className="text-5xl font-black">3,8<span className="text-2xl text-neutral-500">/5</span></span><div><p className="text-2xl tracking-wider text-amber-500" aria-label="3,8 étoiles sur 5">★★★★<span className="text-neutral-300">★</span></p><p className="text-sm text-neutral-600">D’après 112 avis Google publics</p></div></div>
+            <p className="mt-4 max-w-2xl text-sm text-neutral-500">La note peut évoluer. Consultez Google pour lire les commentaires les plus récents et non modifiés.</p>
+          </div>
+          <div className="flex flex-col gap-3">
+            <a href="https://www.google.com/maps/search/?api=1&query=Pizza+Time+110+avenue+de+Domont+95160+Montmorency" target="_blank" rel="noreferrer" className="rounded-full bg-tomato px-6 py-3 text-center font-black text-white">Lire les avis Google</a>
+            <a href="https://www.google.com/maps/search/?api=1&query=Pizza+Time+110+avenue+de+Domont+95160+Montmorency" target="_blank" rel="noreferrer" className="rounded-full border border-black/15 px-6 py-3 text-center font-black">Donner votre avis</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    </>
   );
 }
