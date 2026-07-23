@@ -97,12 +97,12 @@ export const menu: MenuItem[] = [
   { name: "Tarte Daim", description: "Tarte au chocolat et caramel", price: "3,50 €", category: "Desserts", image: productImage("tarte-daim") },
   { name: "Glace 500 ml", description: "Parfum selon disponibilité", price: "5,50 €", category: "Desserts", image: productImage("glace") },
 
-  { name: "Coca-Cola 33 cl", description: "Canette de Coca-Cola", price: "1,80 €", category: "Boissons", image: productImage("boisson-33") },
-  { name: "Coca-Cola Zéro 33 cl", description: "Canette de Coca-Cola Zéro", price: "1,80 €", category: "Boissons", image: productImage("boisson-33") },
-  { name: "Fanta 33 cl", description: "Canette de Fanta", price: "1,80 €", category: "Boissons", image: productImage("boisson-33") },
-  { name: "Sprite 33 cl", description: "Canette de Sprite", price: "1,80 €", category: "Boissons", image: productImage("boisson-33") },
-  { name: "Oasis 33 cl", description: "Canette d’Oasis", price: "1,80 €", category: "Boissons", image: productImage("boisson-33") },
-  { name: "Ice Tea 33 cl", description: "Canette d’Ice Tea", price: "1,80 €", category: "Boissons", image: productImage("boisson-33") },
+  { name: "Coca-Cola 33 cl", description: "Canette de Coca-Cola", price: "1,80 €", category: "Boissons", image: productImage("boisson-coca") },
+  { name: "Coca-Cola Zéro 33 cl", description: "Canette de Coca-Cola Zéro", price: "1,80 €", category: "Boissons", image: productImage("boisson-coca-zero") },
+  { name: "Fanta 33 cl", description: "Canette de Fanta", price: "1,80 €", category: "Boissons", image: productImage("boisson-fanta") },
+  { name: "Sprite 33 cl", description: "Canette de Sprite", price: "1,80 €", category: "Boissons", image: productImage("boisson-sprite") },
+  { name: "Oasis 33 cl", description: "Canette d’Oasis", price: "1,80 €", category: "Boissons", image: productImage("boisson-oasis") },
+  { name: "Ice Tea 33 cl", description: "Canette d’Ice Tea", price: "1,80 €", category: "Boissons", image: productImage("boisson-ice-tea") },
   { name: "Eau 50 cl", description: "Eau minérale", price: "1,20 €", category: "Boissons", image: productImage("eau-50") },
   { name: "Eau 1,5 L", description: "Grande bouteille d’eau", price: "2,00 €", category: "Boissons", image: productImage("eau-150") }
 ];
