@@ -3,8 +3,9 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const departments = [
-  ["Pizzas", "🍕"], ["Menus", "🍽️"], ["Burgers", "🍔"], ["Paninis", "🥪"],
-  ["Tex-Mex", "🍗"], ["Salades", "🥗"], ["Desserts", "🍰"], ["Boissons", "🥤"]
+  ["Pizzas", "🍕"], ["Menus", "🍽️"], ["Burgers", "🍔"], ["Sandwichs", "🥖"],
+  ["Paninis", "🥪"], ["Tex-Mex", "🍗"], ["Tacos", "🌮"], ["Salades", "🥗"],
+  ["Desserts", "🍰"], ["Boissons", "🥤"]
 ];
 
 export function Header() {
