@@ -16,6 +16,12 @@ export const menu: MenuItem[] = [
   { name: "Menu sandwich", description: "1 sandwich au choix, frites et 1 boisson 33 cl", price: "7,50 €", category: "Menus", image: productImage("menu-sandwich") },
   { name: "Menu salade", description: "1 salade au choix et 1 boisson 33 cl", price: "7,50 €", category: "Menus", image: productImage("menu-salade") },
   { name: "Menu dessert", description: "1 dessert au choix et 1 boisson 33 cl", price: "5,50 €", category: "Menus", image: productImage("menu-dessert") },
+  { name: "Menu enfant", description: "1 pizza junior et 1 boisson", price: "6,00 €", category: "Menus", image: productImage("menu-pizza") },
+  { name: "Formule", description: "1 pizza junior et 1 boisson 33 cl", price: "6,20 €", category: "Menus", image: productImage("menu-pizza") },
+  { name: "Formule XL", description: "1 pizza junior, frites et 1 boisson 33 cl", price: "8,20 €", category: "Menus", image: productImage("menu-pizza") },
+  { name: "Menu 1", description: "1 pizza junior au choix et 1 boisson 33 cl", price: "11,00 €", category: "Menus", image: productImage("menu-pizza") },
+  { name: "Menu 2", description: "1 pizza senior au choix et 2 boissons 33 cl", price: "17,00 €", category: "Menus", image: productImage("menu-pizza") },
+  { name: "Menu 3", description: "1 pizza méga au choix, 4 desserts au choix, 1 glace 500 ml et 1 boisson 1,5 L", price: "20,50 €", category: "Menus", image: productImage("menu-pizza") },
   { name: "Margherita", description: "Tomate, fromage", price: "Junior 6,90 € · Méga 14,20 €", category: "Pizzas", image: productImage("margherita"), popular: true },
   { name: "Végétarienne", description: "Tomate, fromage, tomates fraîches, champignons, poivrons", price: "Junior 8,90 € · Méga 17,10 €", category: "Pizzas", image: productImage("vegetarienne") },
   { name: "Reine", description: "Tomate, fromage, jambon, œuf, champignons", price: "Junior 8,90 € · Méga 17,10 €", category: "Pizzas", image: productImage("reine"), popular: true },
@@ -81,13 +87,22 @@ export const menu: MenuItem[] = [
   { name: "Thon", description: "Thon, mayonnaise, salade", price: "5,50 €", category: "Sandwichs", image: productImage("panini-milano") },
   { name: "Américain", description: "Steak haché, frites, sauce", price: "5,80 €", category: "Sandwichs", image: productImage("sandwich-americain") },
 
+  { name: "Tacos 1 viande", description: "1 viande au choix, frites, sauce et cheddar", price: "7,50 €", category: "Tacos", image: productImage("panini-kebab") },
+  { name: "Tacos 2 viandes", description: "2 viandes au choix, frites, sauce et cheddar", price: "9,00 €", category: "Tacos", image: productImage("sandwich-americain") },
+  { name: "Tacos 3 viandes", description: "3 viandes au choix, frites, sauce et cheddar", price: "10,50 €", category: "Tacos", image: productImage("panini-time") },
+
   { name: "Tiramisu", description: "Dessert italien crémeux", price: "3,50 €", category: "Desserts", image: productImage("tiramisu") },
   { name: "Mousse au chocolat", description: "Mousse au chocolat", price: "3,50 €", category: "Desserts", image: productImage("mousse-chocolat") },
   { name: "Panna cotta", description: "Dessert italien", price: "3,50 €", category: "Desserts", image: productImage("panna-cotta") },
   { name: "Tarte Daim", description: "Tarte au chocolat et caramel", price: "3,50 €", category: "Desserts", image: productImage("tarte-daim") },
   { name: "Glace 500 ml", description: "Parfum selon disponibilité", price: "5,50 €", category: "Desserts", image: productImage("glace") },
 
-  { name: "Boisson 33 cl", description: "Coca-Cola, Coca-Cola Zero, Fanta, Sprite, Oasis ou Ice Tea", price: "1,80 €", category: "Boissons", image: productImage("boisson-33") },
+  { name: "Coca-Cola 33 cl", description: "Canette de Coca-Cola", price: "1,80 €", category: "Boissons", image: productImage("boisson-33") },
+  { name: "Coca-Cola Zéro 33 cl", description: "Canette de Coca-Cola Zéro", price: "1,80 €", category: "Boissons", image: productImage("boisson-33") },
+  { name: "Fanta 33 cl", description: "Canette de Fanta", price: "1,80 €", category: "Boissons", image: productImage("boisson-33") },
+  { name: "Sprite 33 cl", description: "Canette de Sprite", price: "1,80 €", category: "Boissons", image: productImage("boisson-33") },
+  { name: "Oasis 33 cl", description: "Canette d’Oasis", price: "1,80 €", category: "Boissons", image: productImage("boisson-33") },
+  { name: "Ice Tea 33 cl", description: "Canette d’Ice Tea", price: "1,80 €", category: "Boissons", image: productImage("boisson-33") },
   { name: "Eau 50 cl", description: "Eau minérale", price: "1,20 €", category: "Boissons", image: productImage("eau-50") },
   { name: "Eau 1,5 L", description: "Grande bouteille d’eau", price: "2,00 €", category: "Boissons", image: productImage("eau-150") }
 ];
